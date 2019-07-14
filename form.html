@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,24 @@
     <link rel="stylesheet" href="normalize.css">
     <title>Formularz LT</title>
 </head>
+
 <body>
     <main>
-        <form>
-            <input>
+        <form class="form">
+            <p>
+                <label for="imie">Twoje imię:</label>
+                <input type="text" placeholder="wpisz imię" name="twojeImie" id="imie">
+            </p>
+            <p>
+                <label for="nazwisko">Twoje nazwisko:<br>
+                    <input type="text" value="domyslna tresc" name="twojeNazwisko" id="nazwisko">
+                </label>
+            </p>
+            <fieldset>
+                <legend>Tekst</legend>
+            </fieldset>
         </form>
     </main>
 </body>
+
 </html>
